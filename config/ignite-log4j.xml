@@ -87,13 +87,16 @@
 
         <Logger name="com.amazonaws" level="WARN"/>
 
+        <Logger name="org.apache.ignite.cdc.conflictresolve.CacheVersionConflictResolverImpl" level="DEBUG" additivity="false">
+            <AppenderRef ref="IGNITE"/>
+        </Logger>
+
         <Root level="INFO">
             <!-- Uncomment to enable logging to console. -->
             <!--
             <AppenderRef ref="CONSOLE" level="DEBUG"/>
             <AppenderRef ref="CONSOLE_WARN" level="WARN"/>
             -->
-
             <AppenderRef ref="CONSOLE_ERR" level="ERROR"/>
             <AppenderRef ref="FILE" level="DEBUG"/>
         </Root>
