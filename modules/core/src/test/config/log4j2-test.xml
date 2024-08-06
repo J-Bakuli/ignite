@@ -89,6 +89,11 @@
         -->
         <Logger name="org" level="INFO"/>
         <Logger name="org.eclipse.jetty" level="INFO"/>
+<!--        <Logger name="org.apache.ignite.cdc.conflictresolve.CacheVersionConflictResolverImpl" level="DEBUG" additivity="false">
+            <Root level="DEBUG">
+                <AppenderRef ref="FILE"/>"/>
+            </Root>
+        </Logger>-->
 
         <Root level="INFO">
             <!--
